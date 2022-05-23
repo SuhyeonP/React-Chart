@@ -4,7 +4,7 @@ export default function App() {
   return (
     <>
       <div id="test" css={{ width: '100% !important' }}>
-        sample
+        sample test
       </div>
     </>
   );
