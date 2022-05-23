@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Global } from '@emotion/react';
-import App from './App';
 import { globalStyles } from '~/src/globalStyles';
+import Router from "~/src/router/Router";
 
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
   <React.StrictMode>
     <Global styles={globalStyles} />
-    <App />
+      <Router/>
   </React.StrictMode>,
   rootElement,
 );
