@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import App from '~/src/App';
 import { EChart } from '~/src/component/page';
-import BaseLayout from '~/src/component/molecules/layout/BaseLayout';
+import { BaseLayout } from '~/src/component/molecules/layout';
 
 const Router = (): JSX.Element => {
   return (
