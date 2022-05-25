@@ -1,0 +1,80 @@
+import { ArgsTable, Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import { BasicLineGraph } from '.';
+
+<Meta
+    title={"ECharts/LineGraph"}
+    component={BasicLineGraph}
+    argTypes={{
+        lineData: {
+          description: 'data array',
+          control: {
+            type: 'array'
+          },
+          table:{
+            type: {
+              summary: 'number[]'
+            }
+          },
+          defaultValue: [1,2,3,4]
+        },
+      axisData: {
+        description: 'change category',
+        defaultValue: ['test1', 'test2', 'test3', 'test4'],
+        control: {
+          type: 'array',
+        }
+      },
+      type: {
+          description: 'graph type',
+          control: {
+            type: 'radio',
+            options: ['line', 'bar']
+          },
+          table:{
+            type: {
+              summary: "line | bar"
+            }
+          },
+          defaultValue: 'line'
+        },
+        xName: 'test',
+        xNameLocation: {
+          description: 'name location',
+          control: {
+            type: 'radio',
+            options: ['end', 'start', 'center'],
+            labels: {
+              end: 'end',
+              start: 'start',
+              center: 'middle - center'
+            }
+          },
+          table: {
+            type: {
+              summary: 'end | start | middle | center'
+            }
+          },
+          defaultValue: 'end',
+        }
+    }}
+/>
+
+export const Template = (args) => {
+    return (
+        <BasicLineGraph {...args}/>
+    )
+}
+
+<Canvas>
+    <Story name="basic" args={{
+        lineData: [1,2,3,4],
+        type: 'line',
+        axisData: ['test1', 'test2', 'test3', 'test4'],
+        xName: 'test',
+        xNameLocation: 'end'
+    }}>
+      {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="basic"/>

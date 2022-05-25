@@ -1,0 +1,21 @@
+import { ArgsTable, Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import { LogGraph } from '.';
+
+<Meta
+  title={"ECharts/LogGraph"}
+  component={LogGraph}
+/>
+
+export const Template = (args) => {
+  return (
+    <LogGraph {...args}/>
+  )
+}
+
+<Canvas>
+  <Story name="log">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="log"/>
