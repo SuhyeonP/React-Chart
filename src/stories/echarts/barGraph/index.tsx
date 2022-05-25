@@ -1,7 +1,3 @@
-import React from 'react';
+import BarGraph from './BarGraph';
 
-const BarGraph = (): JSX.Element => {
-  return <div>test</div>;
-};
-
-export default BarGraph;
+export { BarGraph };
