@@ -1,19 +1,19 @@
 import { ArgsTable, Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
-import { LineGraph } from '.';
+import { BasicLineGraph } from '.';
 
 <Meta
     title={"ECharts/LineGraph"}
-    component={LineGraph}
+    component={BasicLineGraph}
 />
 
-export const Component = (args) => {
+export const BasicComponent = (args) => {
     return (
-        <LineGraph/>
+        <BasicLineGraph/>
     )
 }
 
 <Canvas>
-    <Story name="Accept">
-        <Component accept=".jpg .doc" />
+    <Story name="basic">
+        <BasicComponent accept=".jpg .doc" />
     </Story>
 </Canvas>
