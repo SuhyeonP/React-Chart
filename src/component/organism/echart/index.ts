@@ -1,3 +1,3 @@
-import EBarLineChart from './EBarLineChart';
+import EChartApply from './EChartApply';
 
-export { EBarLineChart };
+export { EChartApply };

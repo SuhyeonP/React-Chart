@@ -1,11 +1,12 @@
 import React from 'react';
 import { Grid, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { Charts } from '~/src/util/types';
 
 interface IProps {
-  selected: string;
+  selected: Charts;
   changeSelected: (
     event: React.MouseEvent<HTMLElement>,
-    selected: string,
+    selected: Charts,
   ) => void;
 }
 
