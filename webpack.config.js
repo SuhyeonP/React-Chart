@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000;
 
 module.exports = (env, argv) => ({
   devtool: argv.mode === 'production' ? undefined : 'eval-source-map',
-  entry: './src/index.tsx',
+  entry: './src/LineGraph.tsx',
   stats: 'minimal',
   output: {
     filename: '[name].js',
