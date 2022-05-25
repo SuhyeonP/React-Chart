@@ -224,3 +224,8 @@ export interface IXYAxisProps extends IChartCommon {
   zlevel?: number;
   z?: number;
 }
+
+export interface IEChartOptions {
+  xAxis?: IXYAxisProps;
+  yAxis?: IXYAxisProps;
+}

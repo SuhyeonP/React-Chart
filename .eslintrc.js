@@ -29,6 +29,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'plugin:mdx/recommended',
   ],
   parser: '@typescript-eslint/parser',
   settings: {
@@ -65,7 +66,11 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-var': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/quotes': ['warn', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
+    '@typescript-eslint/quotes': [
+      'warn',
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: false },
+    ],
     'import/order': 'error',
     curly: ['error', 'all'],
     eqeqeq: 'error',
